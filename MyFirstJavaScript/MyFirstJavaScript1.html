@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<script>
+function myFunctionShowDate() {document.getElementById("block1").innerHTML = Date()}
+function myFunctionSayHello() {document.getElementById("block2").innerHTML = "Hello JavaScript!"}
+function myFunctionTurnOff()  {document.getElementById("block4").style.display="none"}
+function myFunctionTurnOn()   {document.getElementById("block4").style.display="block"}
+</script>
+
+</head>
+
+<body>
+
+<h2>JavaScript Tricks - 1</h2>
+
+<p id="block1"></p>
+
+<button type="button" onclick='myFunctionShowDate()'>Click me to display Date and Time.</button>
+
+<hr>
+
+<p id="block2">JavaScript can change HTML content.</p>
+
+<button type="button" onclick='myFunctionSayHello()'>Click Me!</button>
+
+<hr>
+
+<p>JavaScript can change HTML attributes.</p>
+
+<p>In this case JavaScript changes the src (source) attribute of an image.</p>
+
+<button onclick='document.getElementById("myImage").src="pic_bulbon.gif"'>Turn on the light</button>
+
+<img id="myImage" src="pic_bulboff.gif" style="width:100px">
+
+<button onclick='document.getElementById("myImage").src="pic_bulboff.gif"'>Turn off the light</button>
+
+<hr>
+
+<p id="block3">JavaScript can change the style of an HTML element.</p>
+
+<button type="button" onclick='document.getElementById("block3").style.fontSize="25px"'>25px!</button>
+<button type="button" onclick='document.getElementById("block3").style.fontSize="35px"'>35px!</button>
+
+<hr>
+
+<p id="block4">JavaScript can hide HTML elements.</p>
+
+<button type="button" onclick='myFunctionTurnOff()'>Turn Off!</button>
+<button type="button" onclick= 'myFunctionTurnOn()'>Turn On! </button>
+
+</body>
+</html> 

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<script src="myJavaScript.js"></script>
+
+</head>
+
+<body>
+
+<h2 align="center">JavaScript Tricks - 3</h2>
+
+<p align="center">The variables x and y were assigned the values 10 and 4.<br> And Z = (x + y**2). Then click button to see Z.</p>
+<p id="block5" align="center"><br>
+<button type="button" onclick='myJavaProgram()'>See Z</button>
+</p>
+
+<hr>
+
+<h1 id="myH"></h1>
+<p id="myP"></p>
+
+<script>
+document.getElementById("myH").innerHTML = "My First Page";
+document.getElementById("myP").innerHTML = "My first paragraph.";
+</script>
+
+<hr>
+
+<p id="block6" align="center"></p>
+
+<script>
+var person = {
+    firstName : "Luiz",
+    lastName  : "Estraviz",
+    age       : 57,
+    eyeColor  : "green"
+};
+
+document.getElementById("block6").innerHTML =
+person.firstName + " " + person.lastName + " is " + person.age + " years old.";
+</script>
+
+<hr>
+
+<p id="block7" align="center"></p>
+<script>
+function myFunction(p1, p2) {
+    return p1 * p2;
+}
+document.getElementById("block7").innerHTML = myFunction(4, 3);
+</script>
+
+<p id="block8" align="center"></p>
+<script>
+function toCelsius(f) {
+    return (5/9) * (f-32);
+}
+document.getElementById("block8").innerHTML = "70 graus F em Celsius são: " + toCelsius(70) + " graus C.";
+</script>
+
+</body>
+</html> 

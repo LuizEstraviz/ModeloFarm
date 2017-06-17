@@ -1,0 +1,77 @@
+Learning react (Luiz .. 17/Jun/2017)
+
+Configurei Windows 10 para que localhost funcionasse
+	https://www.youtube.com/watch?v=6LjpyHoXVjo
+
+Diretório de páginas públicas:
+	C:\inetpub\wwwroot 
+	
+Instalação do node e npm
+	https://nodejs.org/en/download/
+	https://docs.npmjs.com/getting-started/what-is-npm
+
+Consulta módulos básicos estão instalados verificando a versão:
+	npm --version	[5.0.3]
+	node --version	[v6.11.0]
+	git --version	[git version 2.13.1.windows.1]
+
+Tutorial do reactJS
+	https://www.tutorialspoint.com/reactjs/index.htm
+	
+"Projeto reactJS ModeloFarm" funcionando:
+	C:\inetpub\wwwroot\ModeloFarm
+	Para acionar o projeto ModeloFarm
+		Numa janela DOS, dentro da pasta ModeloFarm, rodar "npm start".
+		No navegador, abrir "http://localhost:8080/".
+	Arquivos de código js:
+		webpack.config.js
+		package.json
+		main.js
+		App.jsx
+	Mudanças salvas nos arquivos de código js são automaticamete atualizadas na página em exibição.
+
+"Projeto reactJS apoema" do Caio AINDA NÃO FUNCIONANDO no localhost:8080
+    Apenas copiei código e pastas do projeto que o Caio mantém no Apoema
+	trocando a pasta node-modules que ele usa pela "nova" que funciona para o "projeto react ModeloFarm"
+
+==========================================================================================================
+== DESAFIO: avançar no "learning" até fazer o esquema do Caio funcionar no localhost do meu computador! ==
+==========================================================================================================
+===              Instruções do Caio para o esquema dele funcionar no APOEMA                            ===
+==========================================================================================================
+	
+1. Abra um comando de linha (cmd) na pasta Dev
+1.1. Sincronize com o código mais novo rodando: npm run sync
+
+2. Rode npm start e aguarde uns instantes até aparecer a mensagem "webpack: bundle is now VALID."
+2.1. Se for necessário reinstalar:  npm install
+
+3. Abra o navegador em http://localhost:8080 e verá a página
+
+4. Edite os arquivos em app conforme necessários, os scripts sql estão em sqlscripts/scripts.js
+
+5. Salve o arquivo, aguarde alguns instantes e a página será automaticamente recarregada com o novo conteúdo.
+
+6. Se estiver tudo ok, dê os comandos:
+6.1. git commit -a -m "MENSAGEM DESCRITIVA DAS ALTERACOES": coloca as alterações no cache local
+6.1.1. git pull: obtém o código mais novo
+6.2. git push: sobe o código para o github
+
+7. Pronto, agora é só abrir https://apoema.esalq.usp.br:10000/custom e rodar o comando deploy
+7.1. O comando deploy do webmin roda um script que executa alguns comandos.
+
+==========================================================================================================
+===                             Senhas do APOEMA e dos servidores                                      ===
+==========================================================================================================
+
+Servidor APOEMA (Linux Ubuntu 14.04 - Nuvem-USP) ->  IP 200.144.254.88
+login: getlidar
+senha: fA4u05bcz#
+porta ssh (putty): 1022
+porta PostgreSQL: 5432
+login PostgreSQL: postgres
+senha PostgreSQL: fA4u05bcz#
+
+Webmin: https://apoema.esalq.usp.br:10000
+login: root
+senha: iD9tibfyc
